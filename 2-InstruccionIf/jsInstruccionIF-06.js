@@ -1,8 +1,20 @@
+/* Gustavo Richter Div E
+If ej 6 */
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad; 
+	edad = document.getElementById("txtIdEdad").value;
+	edad = parseInt(edad);
 
-
-
-}//FIN DE LA FUNCIÓN
+	if (edad>=18)
+	 {
+	 	alert("Es mayor de edad");
+	 }
+	 else if (edad<12) 
+	 {
+	 	alert("Es un niño");
+	 }
+	 else
+	 {
+	 	alert("Es adolecente");
+	 } }
