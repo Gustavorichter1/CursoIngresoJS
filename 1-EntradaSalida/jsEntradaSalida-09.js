@@ -30,6 +30,7 @@ function mostrarAumento()
 {
 	var sueldo;
 	var resultado;
+<<<<<<< HEAD
 	var aumentoPorcentaje;
 
 	sueldo = document.getElementById("txtIdSueldo").value;
@@ -50,3 +51,16 @@ function mostrarAumento()
 
 
 }
+=======
+	var aumento;
+
+	sueldo = document.getElementById("txtIdSueldo").value;
+
+	sueldo = parseFloat(sueldo);
+
+	aumento = sueldo * (10/100);
+	resultado = sueldo + aumento;
+
+	document.getElementById("txtIdResultado").value = resultado;
+}
+>>>>>>> b115cfc58fcf336386d6a0156ae2dedfccf51688

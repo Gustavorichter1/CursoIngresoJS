@@ -36,14 +36,20 @@ mostrar por alert el importe, el descuento, el importe con Descuento
 function mostrarAumento()
 {
 	var importe;
+<<<<<<< HEAD
 	var descuento;
 	var porcentaje;
 	var resultado
+=======
+	var resultado;
+	var descuento;
+>>>>>>> b115cfc58fcf336386d6a0156ae2dedfccf51688
 
 	importe = document.getElementById("txtIdImporte").value;
 
 	importe = parseInt(importe);
 
+<<<<<<< HEAD
 	porcentaje = prompt("Ingrese el porcentaje a descontar");
 
 	descuento = (importe - importe * (porcentaje/100));
@@ -54,4 +60,14 @@ function mostrarAumento()
 	alert("Su importe es " + importe + ", el descuento es del " + porcentaje + "% y su importe con descuento es " + descuento + ".");
 
     
+=======
+	descuento = importe - importe * (0.25);
+
+	
+	resultado = importe - (importe - descuento);
+
+	resultado = document.getElementById("txtIdResultado").value = resultado;
+
+
+>>>>>>> b115cfc58fcf336386d6a0156ae2dedfccf51688
 }
