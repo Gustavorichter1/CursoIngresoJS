@@ -1,6 +1,16 @@
 function mostrar()
 {
-	var estacionIngresada =txtIdEstacion.value;
-	alert(estacionIngresada);
+	var destino;
+	var estacion;
+	var mensaje;
+	var precioBase=15.000;
+	var descuento;
+	var precioDescuento;
 
-}//FIN DE LA FUNCIÓN
+	descuento = precioBase - (precioBase*precioDescuento)/100;
+
+	destino=document.getElementById("txtIdDestino").value;
+	estacion=document.getElementById("txtIdEstacion").value;
+	
+	switch()
+}

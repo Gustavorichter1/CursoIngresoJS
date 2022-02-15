@@ -1,130 +1,68 @@
-<<<<<<< HEAD
-/* Gustavo Richter Div E
+function Sumar()
+{ 
+var precioUno;
+var precioDos;
+var precioTres;
+var resultado;
 
-1.	Para el departamento de facturación:
-A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
-B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
-C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
-*/
-function Sumar () 
-{
-	//declaro variable
-	var precioUno;
-	var precioDos;
-	var precioTres;
-	var resultado;
+precioUno=document.getElementById("txtIdPrecioUno").value;
+precioUno=parseFloat(precioUno);
 
-	//entrada
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
+precioDos=document.getElementById("txtIdPrecioDos").value;
+precioDos=parseFloat(precioDos);
 
-    //proceso
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
+precioTres=document.getElementById("txtIdPrecioTres").value;
+precioTres=parseFloat(precioTres);
 
-	resultado = precioUno + precioDos + precioTres;
+resultado=precioUno+precioDos+precioTres;
 
-	//salida
-	alert("La suma de los tres precios es " + resultado);
-
-	
+alert("la suma de los tres productos es igual a $"+resultado)
 }
-function Promedio () 
+
+function Promedio()
 {
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
+var promedio;
+var precioUno;
+var precioDos;
+var precioTres;
+var resultado;
 
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
+precioUno=document.getElementById("txtIdPrecioUno").value;
+precioUno=parseFloat(precioUno);
 
-	resultado = ((precioUno + precioDos + precioTres)/3);
+precioDos=document.getElementById("txtIdPrecioDos").value;
+precioDos=parseFloat(precioDos);
 
-	alert("El promedio de los tres precios es " + resultado);
-	
+precioTres=document.getElementById("txtIdPrecioTres").value;
+precioTres=parseFloat(precioTres);
+
+resultado=precioUno+precioDos+precioTres;
+promedio=resultado/3;
+
+alert("El promedio de los tres productos es igual a $"+promedio);
 }
-function PrecioFinal () 
+
+function PrecioFinal()
 {
-	var total
+var promedio;
+var precioUno;
+var precioDos;
+var precioTres;
+var resultado;
+var iva
 
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
+precioUno=document.getElementById("txtIdPrecioUno").value;
+precioUno=parseFloat(precioUno);
 
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
+precioDos=document.getElementById("txtIdPrecioDos").value;
+precioDos=parseFloat(precioDos);
 
-	total = precioUno + precioDos + precioTres;
-	resultado = total + total *21/100;
+precioTres=document.getElementById("txtIdPrecioTres").value;
+precioTres=parseFloat(precioTres);
 
+resultado=precioUno+precioDos+precioTres;
+iva=(resultado*21)/100;
 
-	alert("El total es " + total +  ". Con IVA incluido: " + resultado);
-=======
-/*1.	Para el departamento de facturación:
-A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
-B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
-C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
-*/
-function Sumar () 
-{
-	//declaro variable
-	var precioUno;
-	var precioDos;
-	var precioTres;
-	var resultado;
+alert("El precio final es $"+resultado+", mas IVA, es un total de $"+(resultado+iva))
 
-	//entrada
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
-
-    //proceso
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
-
-	resultado = precioUno + precioDos + precioTres;
-
-	//salida
-	alert("La suma de los tres precios es " + resultado);
-
-	
-}
-function Promedio () 
-{
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
-
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
-
-	resultado = ((precioUno + precioDos + precioTres)/3);
-
-	alert("El promedio de los tres precios es " + resultado);
-	
-}
-function PrecioFinal () 
-{
-	var total
-
-	precioUno = document.getElementById("txtIdPrecioUno").value;
-	precioDos = document.getElementById("txtIdPrecioDos").value;
-	precioTres = document.getElementById("txtIdPrecioTres").value;
-
-	precioUno = parseFloat(precioUno);
-	precioDos = parseFloat(precioDos);
-	precioTres = parseFloat(precioTres);
-
-	total = precioUno + precioDos + precioTres;
-	resultado = total + total *21/100;
-
-
-	alert("El total es " + total +  ". Con IVA incluido: " + resultado);
->>>>>>> b115cfc58fcf336386d6a0156ae2dedfccf51688
 }

@@ -1,20 +1,41 @@
-/* Gustavo Richter Div E
-If ej 6 */
+/*
+Ejercicio 6 bis(usar if else):
+Al ingresar por prompt una edad debemos informar si
+la persona es anciano(mas de 70), mayor de edad (entre 70 y 18 años),
+adolescente (entre 13 y 17 años), niño (menor a 13 años), bebe (0 a 3 años).
+mostrar por ID el resultado.
+*/
+
 function mostrar()
 {
-	var edad; 
-	edad = document.getElementById("txtIdEdad").value;
-	edad = parseInt(edad);
+	var edadIngresada;
+	var mensaje;
 
-	if (edad>=18)
+
+	edadIngresada=document.getElementById("txtIdEdad").value;
+	edadIngresada=parseInt(edadIngresada);
+	edadIngresada=prompt("Ingrese su edad");
+
+	if (edadIngresada>70)
 	 {
-	 	alert("Es mayor de edad");
+	 	mensaje="Es anciano";
 	 }
-	 else if (edad<12) 
+	 else if (edadIngresada<70 && edadIngresada>18) 
 	 {
-	 	alert("Es un niño");
+	 	mensaje="Es mayor de edad";
 	 }
-	 else
+	 if (edadIngresada>13 && edadIngresada<17) 
 	 {
-	 	alert("Es adolecente");
-	 } }
+	 	mensaje="Es adolescente";
+	 }
+	 if (edadIngresada<13) 
+	 {
+	 	mensaje="Es un niño";
+	 }
+	 if (edadIngresada<3)
+	  {
+	  	mensaje="Es un bebe";
+	  }
+txtIdEdad.value=mensaje;
+
+}

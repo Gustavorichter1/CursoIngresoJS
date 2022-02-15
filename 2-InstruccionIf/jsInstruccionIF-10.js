@@ -1,6 +1,20 @@
+//Gustavo Richter Div E
+//Ej 10
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
-	alert("ok");
+	var aleatorio = Math.random();
 
-}//FIN DE LA FUNCIÓN
+	enteroAleatorio = Math.floor(aleatorio * (10 - 1 + 1) +1);
+
+	if (enteroAleatorio>=9) 
+	{
+		alert("Excelente")
+	}
+	else if (enteroAleatorio>4 && enteroAleatorio<9) 
+	{
+		alert("Aprobo")
+	}
+	else
+	alert("Vamos, la proxima se puede")
+
+}

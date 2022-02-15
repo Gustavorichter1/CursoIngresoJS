@@ -13,7 +13,5 @@ function mostrar()
 
 	//muestro el nombre
 		alert(nombreIngresado);
-
-	
 }
 

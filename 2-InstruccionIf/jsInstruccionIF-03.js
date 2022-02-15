@@ -1,3 +1,5 @@
+//Gustavo Richter Div E
+//if ej 3
 function mostrar()
 {
 	var edadIngresada;
@@ -9,10 +11,10 @@ function mostrar()
 			alert("Es mayor de edad")
 		}
 		else
-{
+		{
 
-alert("Es menor de edad");
-}
+			alert("Es menor de edad");
+		}
 
 
 

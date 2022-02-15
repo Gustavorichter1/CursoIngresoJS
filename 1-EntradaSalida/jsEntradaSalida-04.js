@@ -1,9 +1,7 @@
-/* 
-Gustavo Richter Div E
+/* Gustavo Richter Div E
 e/s ej 4
 Debemos lograr tomar un dato por 'PROMPT' 
-y lo muestro por 'ID' al presionar el botón 'mostrar'
-*/
+y lo muestro por 'ID' al presionar el botón 'mostrar'*/
 function mostrar()
 {
 	//declaro la variable
@@ -14,6 +12,5 @@ function mostrar()
 
 	//asigno nombre a la caja de texto
 	txtIdNombre.value = nombreIngresado;
-	
 }
 
